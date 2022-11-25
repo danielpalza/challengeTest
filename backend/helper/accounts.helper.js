@@ -1,0 +1,10 @@
+export class AccountHelper {
+  static filterAccounts = (accounts) => {
+    //console.log(accounts)
+    //para este filtro, se considera $ como pesos, y u$s como dolares.
+    let r = accounts.cuentas
+      .filter((a) => a.tipo_letras == "CA" || a.tipo_letras == "CC")
+      .filter((b) => b.moneda == "u$s" || b.moneda == "$");
+    return r;
+  };
+}
