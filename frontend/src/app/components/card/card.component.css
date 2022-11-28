@@ -1,0 +1,17 @@
+.card{
+    background-color: var(--primary-color);
+    height: 20vh;
+    width: 30vw;
+    margin:0.5vw;
+    padding: 1vw;
+    border-radius: .8rem;
+    color: white;
+    box-shadow: -0.5vh 0.5vh 1vh gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+
+}
