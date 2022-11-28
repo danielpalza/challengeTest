@@ -5,7 +5,8 @@ export class AccountController {
   static get = async (req, res, Next) => {
     try {
 
-      //get info about the accounts in the api
+      //Por cuestiones del test, se busco armar esta logica con paquetes internos
+      //sin instalar librerias externas.
       let re = res;
       let url= "https://api.npoint.io/97d89162575a9d816661"
       https
