@@ -1,0 +1,11 @@
+
+
+.header{
+    background: var(--primary-color);
+   
+    padding: 3vh;
+}
+.header > img{
+    height: 10vh;
+    width: auto;
+}
