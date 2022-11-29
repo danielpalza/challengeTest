@@ -1,0 +1,11 @@
+<div class="grid">
+    <app-account-view *ngIf="showAccount" [account]="account" (close)="closeModal()"></app-account-view>
+    <div class="load-screen" *ngIf="!load">
+        <h2>Cargando la informacion de las cuentas</h2>
+    </div>
+    <div class='grid-card' *ngIf="load">
+        <app-card *ngFor="let account of cards" (sAccount)="setAccount($event)" [account]="account"></app-card>
+    </div>
+    
+  
+</div>
