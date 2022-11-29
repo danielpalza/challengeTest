@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CardComponent } from './components/card/card.component';
 import { GridCardComponent } from './components/grid-card/grid-card.component';
+import { AccountViewComponent } from './components/account-view/account-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CardComponent,
-    GridCardComponent
+    GridCardComponent,
+    AccountViewComponent
   ],
   imports: [
     BrowserModule,
