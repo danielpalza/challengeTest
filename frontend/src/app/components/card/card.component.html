@@ -1,6 +1,14 @@
-<div (click)="showAccount()" class="card">
-    <h4>{{account.tipo_letras == 'CC'? 'Cuenta Corriente': 'Cuenta de Ahorro'}}</h4>
-    <h4>Nro: {{account.n}}</h4>
-
-
+<div (click)="!account.button?showAccount():cIndex(account.val)"class="card">
+  <div  *ngIf="!account.button">
+    <h4>
+      {{account.tipo_letras == "CC" ? "Cuenta Corriente" : "Cuenta de Ahorro"}}
+    </h4>
+    <h4>Nro: {{ account.n }}</h4>
+  </div>
+  <div   *ngIf="account.button">
+    <h4>
+      {{account.name }}
+    </h4>
+    
+  </div>
 </div>
