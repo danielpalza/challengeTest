@@ -38,7 +38,7 @@ Este es un proyecto de postulacion para NCR
 
 De esta manera ya tendremos tanto configurado como iniciado el backend y el frontend del repositorio.
 
-Ahora solo falta ingresar a https://localhost:4200 para poder ver el sitio.
+Ahora solo falta ingresar a http://localhost:4200 para poder ver el sitio.
 
 
 ## Tests
