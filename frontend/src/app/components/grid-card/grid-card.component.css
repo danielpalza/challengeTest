@@ -1,12 +1,23 @@
-.grid-card{
+.grid-cards{
     position: relative;
     margin-top:5vh ;
     display: flex;
-    justify-content:space-around;
+    justify-content:flex-start;
     flex-wrap: wrap;
-    width: auto;
+    width: 88vw;
     z-index: 1000;
     height: 50vh;
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+}
+.box-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .load-screen{
@@ -17,4 +28,26 @@
     width: 100vw;
 
     height: 50vh;
+}
+
+.title{
+    margin-top: 3vh;
+    text-align: center;
+
+}
+.close-box{
+    margin:1vh;
+    margin-top: 5vh;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.close-box > button{
+    padding: 1vh 2vh;
+    background-color: var(--primary-color);
+    color:white;
+    border-radius: .5rem;
+    border:none;
+    box-shadow: -0.5vh 0.5vh 1vh rgb(180, 179, 179);
 }
