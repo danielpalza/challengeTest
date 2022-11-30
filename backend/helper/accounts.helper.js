@@ -6,7 +6,10 @@ export class AccountHelper {
     let r = accounts.cuentas
       .filter((a) => a.tipo_letras == "CA" || a.tipo_letras == "CC")
       .filter((b) => b.moneda == "u$s" || b.moneda == "$");
-    let arr = r.map((c)=> new Account(c))  
-    return r;
+    let arr = r.map((c) => {
+      c.saldo = c.saldo.replace(/\D/g, "");
+      return new Account(c);
+    });
+    return arr;
   };
 }
