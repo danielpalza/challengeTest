@@ -49,3 +49,7 @@ Para correr los test, se debe abrir una ventana de comando dentro de la carpeta 
 ```
 
 Al finalizar, se mostrarian los test y sus resultados.
+
+
+
+Creado en Angular y NodeJs, por Daniel Palza. 
